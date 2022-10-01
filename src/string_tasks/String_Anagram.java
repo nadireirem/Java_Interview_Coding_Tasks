@@ -13,7 +13,7 @@ public class String_Anagram {
      */
 
     // solution 1:
-    public static boolean same(String a, String b) {
+  /*  public static boolean same(String a, String b) {
         char[] ch1 = a.toCharArray();
         char[] ch2 = b.toCharArray();
 
@@ -33,6 +33,8 @@ public class String_Anagram {
     }
 
 
+
+   */
     // solution 2
     public static boolean Same(String a, String b) {
         a = new TreeSet<String>(Arrays.asList(a.split(""))).toString();
@@ -40,5 +42,10 @@ public class String_Anagram {
         return a.equals(b);
     }
 
+    public static void main(String[] args) {
+        String a="anagram";
+        String b="nagaram";
+        System.out.println(Same(a,b));
+    }
 
 }
